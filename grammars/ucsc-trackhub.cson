@@ -1,0 +1,216 @@
+# If this is your first time writing a language grammar, check out:
+#   - https://flight-manual.atom.io/hacking-atom/sections/creating-a-grammar/
+
+'scopeName': 'source.ucsc-trackhub'
+'name': 'UCSC Track Hub'
+'fileTypes': [
+    'txt'
+]
+#'foldingStartMarker': 'track'
+#'foldingStartMarker': 'track'
+'patterns': [
+    {
+        'comment': 'UCSC track hub comments'
+        'match': '^\\s*#.*$'
+        'name': 'comment.ucsc-trackhub'
+    }
+    {
+        'match': '\\b(parent) (.*)\\b'
+        'name': 'parent.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'entity.name.type'
+            '2':
+                'name': 'entity.other.inherited-class'
+
+    }
+    {
+        'match': '\\b(track) (.*)\\b'
+        'name': 'track.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'entity.other.attribute-name'
+            '2':
+                'name': 'entity.other.attribute-name.id'
+
+    }
+    {
+        'match': '\\b(subGroups) (.*)\\b'
+        'name': 'sub-groups.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.other.special-method'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(include) (.*)\\b'
+        'name': 'include.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'entity.other.attribute-name'
+            '2':
+                'name': 'entity.other.attribute-name.id'
+
+    }
+    {
+        'match': '\\b(bigDataUrl) (.*)\\b'
+        'name': 'big-data-url.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(shortLabel) (.*)\\b'
+        'name': 'short-label.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(longLabel) (.*)\\b'
+        'name': 'long-label.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(color) (.*)\\b'
+        'name': 'color.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(type) (.*)\\b'
+        'name': 'type.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(compositeTrack) (.*)\\b'
+        'name': 'composite-track.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(visibility) (.*)\\b'
+        'name': 'visibility.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(subGroup[1-9]) (.*)\\b'
+        'name': 'sub-group.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'entity.other.inherited-class'
+    }
+    {
+        'match': '\\b(sortOrder) (.*)\\b'
+        'name': 'sort-order.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(viewLimits) (.*)\\b'
+        'name': 'view-limits.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(smoothingWindow) (.*)\\b'
+        'name': 'smoothing-window.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(autoScale) (.*)\\b'
+        'name': 'auto-scale.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(maxHeightPixels) (.*)\\b'
+        'name': 'max-height-pixels.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(container) (.*)\\b'
+        'name': 'container.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(aggregate) (.*)\\b'
+        'name': 'aggregate.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(showSubtrackColorOnUi) (.*)\\b'
+        'name': 'show-subtrack-color-on-ui.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+]
