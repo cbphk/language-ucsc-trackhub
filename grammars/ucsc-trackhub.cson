@@ -6,8 +6,6 @@
 'fileTypes': [
     'txt'
 ]
-#'foldingStartMarker': 'track'
-#'foldingStartMarker': 'track'
 'patterns': [
     {
         'comment': 'UCSC track hub comments'
@@ -22,16 +20,6 @@
                 'name': 'entity.name.type'
             '2':
                 'name': 'entity.other.inherited-class'
-
-    }
-    {
-        'match': '\\b(html) (.*)\\b'
-        'name': 'html.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
 
     }
     {
@@ -75,76 +63,6 @@
 
     }
     {
-        'match': '\\b(bigDataUrl) (.*)\\b'
-        'name': 'big-data-url.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(shortLabel) (.*)\\b'
-        'name': 'short-label.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(longLabel) (.*)\\b'
-        'name': 'long-label.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(color) (.*)\\b'
-        'name': 'color.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(type) (.*)\\b'
-        'name': 'type.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(compositeTrack) (.*)\\b'
-        'name': 'composite-track.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(visibility) (.*)\\b'
-        'name': 'visibility.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
         'match': '\\b(subGroup[1-9]) (.*)\\b'
         'name': 'sub-group.ucsc-trackhub'
         'captures':
@@ -154,87 +72,7 @@
                 'name': 'entity.other.inherited-class'
     }
     {
-        'match': '\\b(sortOrder) (.*)\\b'
-        'name': 'sort-order.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(viewLimits) (.*)\\b'
-        'name': 'view-limits.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(smoothingWindow) (.*)\\b'
-        'name': 'smoothing-window.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(autoScale) (.*)\\b'
-        'name': 'auto-scale.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(maxHeightPixels) (.*)\\b'
-        'name': 'max-height-pixels.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(container) (.*)\\b'
-        'name': 'container.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(aggregate) (.*)\\b'
-        'name': 'aggregate.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(showSubtrackColorOnUi) (.*)\\b'
-        'name': 'show-subtrack-color-on-ui.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'keyword.control'
-            '2':
-                'name': 'keyword.operator'
-
-    }
-    {
-        'match': '\\b(colorByStrand) (.*)\\b'
+        'match': '\\b(aggregate|autoScale|bigDataUrl|color|colorByStrand|compositeTrack|container|html|longLabel|maxHeightPixels|shortLabel|showSubtrackColorOnUi|smoothingWindow|sortOrder|type|viewLimits|visibility) (.*)\\b'
         'name': 'show-subtrack-color-on-ui.ucsc-trackhub'
         'captures':
             '1':
