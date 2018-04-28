@@ -71,9 +71,20 @@
                 'name': 'entity.other.attribute-name.id'
 
     }
+    # All default matching options
     {
         'match': '\\b(aggregate|altColor|autoScale|bigDataUrl|boxedCfg|chromosomes|color|colorByStrand|compositeTrack|container|darkerLabels|dataVersion|directUrl|html|iframeUrl|iframeOptions|longLabel|maxHeightPixels|mouseOverField|otherDb|pennantIcon|priority|sepFields|shortLabel|showSubtrackColorOnUi|skipEmptyFields|skipFields|smoothingWindow|sortOrder|type|url|urlLabel|urls|viewLimits|visibility) (.*)\\b'
-        'name': 'show-subtrack-color-on-ui.ucsc-trackhub'
+        'name': 'optional-settings.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(bamColorMode|bamGrayMode|bamColorTag|noColorTag|bamSkipPrintQualScore|indelDoubleInsert|indelQueryInsert|indelPolyA|minAliQual|pairEndsByName|pairSearchRange|showNames|doWiggle|bigDataIndex|refUrl) (.*)\\b'
+        'name': 'bam-settings.ucsc-trackhub'
         'captures':
             '1':
                 'name': 'keyword.control'
