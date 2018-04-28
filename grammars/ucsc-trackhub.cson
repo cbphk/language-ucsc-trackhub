@@ -13,6 +13,16 @@
         'name': 'comment.ucsc-trackhub'
     }
     {
+        'match': '\\b(include) (.*)\\b'
+        'name': 'include.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'entity.other.attribute-name'
+            '2':
+                'name': 'entity.other.attribute-name.id'
+
+    }
+    {
         'match': '\\b(parent) (.*)\\b'
         'name': 'parent.ucsc-trackhub'
         'captures':
@@ -20,26 +30,6 @@
                 'name': 'entity.name.type'
             '2':
                 'name': 'entity.other.inherited-class'
-
-    }
-    {
-        'match': '\\b(track) (.*)\\b'
-        'name': 'track.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'entity.other.attribute-name'
-            '2':
-                'name': 'entity.other.attribute-name.id'
-
-    }
-    {
-        'match': '\\b(superTrack) (.*)\\b'
-        'name': 'super-track.ucsc-trackhub'
-        'captures':
-            '1':
-                'name': 'entity.other.attribute-name'
-            '2':
-                'name': 'entity.other.attribute-name.id'
 
     }
     {
@@ -53,8 +43,17 @@
 
     }
     {
-        'match': '\\b(include) (.*)\\b'
-        'name': 'include.ucsc-trackhub'
+        'match': '\\b(subGroup[1-9]) (.*)\\b'
+        'name': 'sub-group.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'entity.other.inherited-class'
+    }
+    {
+        'match': '\\b(superTrack) (.*)\\b'
+        'name': 'super-track.ucsc-trackhub'
         'captures':
             '1':
                 'name': 'entity.other.attribute-name'
@@ -63,13 +62,14 @@
 
     }
     {
-        'match': '\\b(subGroup[1-9]) (.*)\\b'
-        'name': 'sub-group.ucsc-trackhub'
+        'match': '\\b(track) (.*)\\b'
+        'name': 'track.ucsc-trackhub'
         'captures':
             '1':
-                'name': 'keyword.control'
+                'name': 'entity.other.attribute-name'
             '2':
-                'name': 'entity.other.inherited-class'
+                'name': 'entity.other.attribute-name.id'
+
     }
     {
         'match': '\\b(aggregate|autoScale|bigDataUrl|color|colorByStrand|compositeTrack|container|html|longLabel|maxHeightPixels|shortLabel|showSubtrackColorOnUi|smoothingWindow|sortOrder|type|viewLimits|visibility) (.*)\\b'
