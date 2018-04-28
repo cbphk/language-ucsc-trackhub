@@ -1,10 +1,15 @@
 {
   "name": "language-ucsc-trackhub",
   "version": "0.0.0",
-  "description": "Syntax highlighting for UCSC Track Hub files in Atom editor.",
+  "description": "Syntax highlighting for UCSC Genome Browser Track Hub files in Atom editor.",
   "keywords": [
     "language",
-    "grammar"
+    "grammar",
+    "ucsc",
+    "genome",
+    "browser",
+    "trackhub",
+    "tracks"
   ],
   "repository": "https://github.com/atom/language-ucsc-trackhub",
   "license": "MIT",

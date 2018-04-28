@@ -25,8 +25,28 @@
 
     }
     {
+        'match': '\\b(html) (.*)\\b'
+        'name': 'html.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
         'match': '\\b(track) (.*)\\b'
         'name': 'track.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'entity.other.attribute-name'
+            '2':
+                'name': 'entity.other.attribute-name.id'
+
+    }
+    {
+        'match': '\\b(superTrack) (.*)\\b'
+        'name': 'super-track.ucsc-trackhub'
         'captures':
             '1':
                 'name': 'entity.other.attribute-name'
@@ -205,6 +225,16 @@
     }
     {
         'match': '\\b(showSubtrackColorOnUi) (.*)\\b'
+        'name': 'show-subtrack-color-on-ui.ucsc-trackhub'
+        'captures':
+            '1':
+                'name': 'keyword.control'
+            '2':
+                'name': 'keyword.operator'
+
+    }
+    {
+        'match': '\\b(colorByStrand) (.*)\\b'
         'name': 'show-subtrack-color-on-ui.ucsc-trackhub'
         'captures':
             '1':
