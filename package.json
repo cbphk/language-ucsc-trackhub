@@ -11,7 +11,7 @@
     "trackhub",
     "tracks"
   ],
-  "repository": "https://github.com/atom/language-ucsc-trackhub",
+  "repository": "https://github.com/cbphk/language-ucsc-trackhub",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
