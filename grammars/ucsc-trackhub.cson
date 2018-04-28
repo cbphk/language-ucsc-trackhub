@@ -72,7 +72,7 @@
 
     }
     {
-        'match': '\\b(aggregate|autoScale|bigDataUrl|color|colorByStrand|compositeTrack|container|html|longLabel|maxHeightPixels|shortLabel|showSubtrackColorOnUi|smoothingWindow|sortOrder|type|viewLimits|visibility) (.*)\\b'
+        'match': '\\b(aggregate|altColor|autoScale|bigDataUrl|boxedCfg|chromosomes|color|colorByStrand|compositeTrack|container|darkerLabels|dataVersion|directUrl|html|iframeUrl|iframeOptions|longLabel|maxHeightPixels|mouseOverField|otherDb|pennantIcon|priority|sepFields|shortLabel|showSubtrackColorOnUi|skipEmptyFields|skipFields|smoothingWindow|sortOrder|type|url|urlLabel|urls|viewLimits|visibility) (.*)\\b'
         'name': 'show-subtrack-color-on-ui.ucsc-trackhub'
         'captures':
             '1':
